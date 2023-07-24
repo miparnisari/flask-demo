@@ -1,2 +1,5 @@
 {
+  "rewrites": [
+    { "source": "/:userID/.well-known/jwks.json", "destination": "/:userID/.well-known/jwks.json" }
+  ]
 }
