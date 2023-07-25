@@ -12,6 +12,6 @@ response_file.close()
 
 @app.route("/<user_id>/.well-known/jwks.json")
 def jwks(user_id):
-    resp = flask.Response()
+    resp = Flask.Response()
     resp.set_data(value=response_contents)
     return resp
