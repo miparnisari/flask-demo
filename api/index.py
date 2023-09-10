@@ -1,8 +1,8 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
 @app.route("/")
 def index():
-    print(request.remote_addr)
+    print(request)
     return "hi"
