@@ -6,3 +6,8 @@ app = Flask(__name__)
 def index():
     print(request.args.get('data'))
     return "hi"
+
+@app.route("/post", methods=['POST'])
+def index():
+    print(request.json)
+    return "OK"
